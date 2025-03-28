@@ -24,7 +24,6 @@ def test_shop():
     WebDriverWait(browser, 10).until(
         EC.presence_of_element_located((By.ID, "user-name"))
     )
-
     # Авторизация
     browser.find_element(By.ID, "user-name").send_keys(USERNAME)
     browser.find_element(By.ID, "password").send_keys(PASSWORD)
